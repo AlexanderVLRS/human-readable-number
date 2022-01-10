@@ -36,14 +36,6 @@ const str10th = [
 module.exports = function toReadable (number) {
     let result = [];
 
-    function verIntegerNumber(number){
-    if (Number.isInteger(number)){
-        return number;
-        }
-    return "number is not valid";
-    }
-
-
     if (number > 99) {
       const x = Math.floor(number / 100);
       result.push(strNums[x-1] + ' hundred');
